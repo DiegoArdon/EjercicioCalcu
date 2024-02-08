@@ -1,0 +1,79 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Ejercicio #1: Verificar si un número ingresado por el usuario es par.
+    int n1;
+
+    cout << "Programa para verificar si el valor ingresado es par" << endl;
+    cout << "\nIngrese el valor deseado: ";
+    cin >> n1;
+
+    if (n1 % 2 == 0) {
+        cout << "El valor ingresado es par." << endl;
+    }
+    else {
+        cout << "\nEl valor ingresado es impar." << endl;
+    }
+
+    // Ejercicio #2: Determinar si un año ingresado es bisiesto o no.
+    int año;
+
+    cout << "\nPrograma para determinar si el año es bisiesto o no." << endl;
+    cout << "\nIngrese el año: ";
+    cin >> año;
+
+    if ((año % 4 == 0 && año % 100 != 0) || (año % 400 == 0)) {
+        cout << año << " el año elegido es bisiesto." << endl;
+    }
+    else {
+        cout << año << " el año elegido no es un año bisiesto." << endl;
+    }
+
+    // Ejercicio #3: Verificar si dos números ingresados por el usuario son iguales.
+    int num1, num2;
+    cout << "\nPrograma para verificar si los valores ingresados son iguales" << endl;
+    cout << "\nIngrese el primer numero: ";
+    cin >> num1;
+    cout << "Ingrese el segundo numero: ";
+    cin >> num2;
+
+    if (num1 == num2) {
+        cout << "Los numeros ingresados son iguales." << endl;
+    }
+    else {
+        cout << "Los numeros ingresados no son iguales." << endl;
+    }
+
+    // Ejercicio #4: Verificar si la edad ingresada por el usuario es mayor o igual a 18.
+    int edad;
+    cout << "\nPrograma para verificar si la persona es mayor o menor de edad" << endl;
+    cout << "\nIngrese su edad: ";
+    cin >> edad;
+
+    if (edad >= 18) {
+        cout << "Eres mayor de edad." << endl;
+    }
+    else {
+        cout << "Eres menor de edad." << endl;
+    }
+
+    // Ejercicio #5: Evaluar si un estudiante aprobó un examen.
+    int calificacion;
+    cout << "\nPrograma para evaluar si el el alumno aprobo" << endl;
+    cout << "\nIngrese la calificacion del estudiante: ";
+    cin >> calificacion;
+
+    if (calificacion >= 85) {
+        cout << "El estudiante ha aprobado el examen con buena nota." << endl;
+    }
+
+    else if (calificacion >= 61) {
+        cout << "El estudiante ha ganado, pero con la nota mínima." << endl;
+    }
+    else {
+        cout << "\nEl estudiante ha reprobado el examen." << endl;
+    }
+
+    return 0;
+}
